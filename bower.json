@@ -1,0 +1,23 @@
+{
+  "name": "ko-router-state-hash",
+  "version": "0.1.0",
+  "authors": [
+    "W3Max"
+  ],
+  "description": "hash support for ko-router.",
+  "main": "src/router-state-hash.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hasher": "^1.2.0"
+  }
+}
