@@ -1,5 +1,5 @@
 {
-  "name": "ko-router-state-hash",
+  "name": "knockout-router-state-hash",
   "version": "0.1.0",
   "description": "",
   "main": "src/router-state-hash.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/W3Max/ko-router-state-hash.git"
+    "url": "https://github.com/W3Max/knockout-router-state-hash.git"
   },
   "author": "W3Max",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/W3Max/ko-router-state-hash/issues"
+    "url": "https://github.com/W3Max/knockout-router-state-hash/issues"
   },
-  "homepage": "https://github.com/W3Max/ko-router-state-hash"
+  "homepage": "https://github.com/W3Max/knockout-router-state-hash"
 }

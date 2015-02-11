@@ -1,10 +1,10 @@
 {
-  "name": "ko-router-state-hash",
+  "name": "knockout-router-state-hash",
   "version": "0.1.0",
   "authors": [
     "W3Max"
   ],
-  "description": "hash support for ko-router.",
+  "description": "hash support for knockout-router.",
   "main": "src/router-state-hash.js",
   "moduleType": [
     "amd"
