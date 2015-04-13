@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/W3Max/knockout-router-state-hash.git"
+    "url": "https://github.com/cbcrc/knockout-router-state-hash"
   },
-  "author": "W3Max",
+  "author": "Maxime Séguin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/W3Max/knockout-router-state-hash/issues"
+    "url": "https://github.com/cbcrc/knockout-router-state-hash/issues"
   },
-  "homepage": "https://github.com/W3Max/knockout-router-state-hash"
+  "homepage": "https://github.com/cbcrc/knockout-router-state-hash"
 }

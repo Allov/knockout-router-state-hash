@@ -2,7 +2,7 @@
   "name": "knockout-router-state-hash",
   "version": "0.1.0",
   "authors": [
-    "W3Max"
+    "Maxime Séguin"
   ],
   "description": "hash support for knockout-router.",
   "main": "src/router-state-hash.js",
