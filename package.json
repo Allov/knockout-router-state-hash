@@ -1,19 +1,16 @@
 {
-  "name": "knockout-router-state-hash",
-  "version": "0.1.0",
-  "description": "",
-  "main": "src/router-state-hash.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cbcrc/knockout-router-state-hash"
-  },
-  "author": "Maxime Séguin",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cbcrc/knockout-router-state-hash/issues"
-  },
-  "homepage": "https://github.com/cbcrc/knockout-router-state-hash"
+    "name": "knockout-router-state-hash",
+    "version": "0.1.0",
+    "authors": [
+        "Maxime Séguin"
+    ],
+    "description": "hash support for knockout-router.",
+    "main": "src/router-state-hash.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+    },
+    "dependencies": {
+        "hasher": "^1.2.0"
+    }
 }

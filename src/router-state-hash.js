@@ -1,43 +1,41 @@
 // Copyright (c) CBC/Radio-Canada. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-define(['hasher'],
-    function(hasher) {
-        'use strict';
+import hasher from 'hasher';
 
-        var RouterStateHash = function(router) {
-            var self = this;
 
-            self.router = router;
-        };
+var RouterStateHash = function(router) {
+    var self = this;
 
-        RouterStateHash.prototype.init = function() {
-            var self = this;
+    self.router = router;
+};
 
-            hasher.initialized.add(function(newHash, oldHash) {
-                self.router._navigate(newHash, oldHash);
-            });
+RouterStateHash.prototype.init = function() {
+    var self = this;
 
-            hasher.changed.add(function(newHash, oldHash) {
-                self.router._navigate(newHash, oldHash);
-            });
-
-            hasher.init();
-        };
-
-        RouterStateHash.prototype.setUrlSilently = function(url) {
-            hasher.changed.active = false;
-            hasher.setHash(url);
-            hasher.changed.active = true;
-        };
-
-        RouterStateHash.prototype.setUrl = function(url) {
-            hasher.setHash(url);
-        };
-
-        RouterStateHash.prototype.setUrlWithoutGeneratingNewHistoryRecord = function(url) {
-            hasher.replaceHash(url);
-        };
-
-        return RouterStateHash;
+    hasher.initialized.add(function(newHash, oldHash) {
+        self.router._navigate(newHash, oldHash);
     });
+
+    hasher.changed.add(function(newHash, oldHash) {
+        self.router._navigate(newHash, oldHash);
+    });
+
+    hasher.init();
+};
+
+RouterStateHash.prototype.setUrlSilently = function(url) {
+    hasher.changed.active = false;
+    hasher.setHash(url);
+    hasher.changed.active = true;
+};
+
+RouterStateHash.prototype.setUrl = function(url) {
+    hasher.setHash(url);
+};
+
+RouterStateHash.prototype.setUrlWithoutGeneratingNewHistoryRecord = function(url) {
+    hasher.replaceHash(url);
+};
+
+export default RouterStateHash;
