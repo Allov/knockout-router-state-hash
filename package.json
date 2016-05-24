@@ -1,16 +1,16 @@
 {
-    "name": "knockout-router-state-hash",
-    "version": "0.1.0",
-    "authors": [
-        "Maxime Séguin"
-    ],
-    "description": "hash support for knockout-router.",
-    "main": "src/router-state-hash.js",
-    "license": "MIT",
-    "scripts": {
-        "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
-    },
-    "dependencies": {
-        "hasher": "^1.2.0"
-    }
+  "name": "knockout-router-state-hash",
+  "version": "1.0.0",
+  "authors": [
+    "Maxime Séguin"
+  ],
+  "description": "hash support for knockout-router.",
+  "main": "src/router-state-hash.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
+  },
+  "dependencies": {
+    "hasher": "^1.2.0"
+  }
 }
