@@ -11,6 +11,12 @@
     "build": "rm -rf dist && mkdir dist && cp -r src/* dist && rm -rf dist/*.js && babel src --out-dir dist --modules umd --presets es2015,stage-0"
   },
   "dependencies": {
-    "hasher": "^1.2.0"
+    "hasher": "^1.2.0",
+    "koco": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
   }
 }
